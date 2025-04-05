@@ -1,0 +1,48 @@
+/* Définir la taille de base pour le rem */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100svh;
+
+    line-height: 1.6;
+    font: 1.6rem "Roboto Slab", sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+*{
+    box-sizing: border-box;
+}
+ul, ol, details summary{
+    list-style: none;
+    padding: 0;
+}
+span{
+    vertical-align: .3rem;
+}
+
+button, input[type="submit"],
+input[type="text"]{
+    border: 0;
+ 
+    background: none;
+    font-size: inherit;
+}
+a{
+    text-decoration: none;
+}
+
+
+h1, h2, h3{
+   margin: 0;
+}
+
+p, figure, blockquote{
+   margin: 0;
+}
+
