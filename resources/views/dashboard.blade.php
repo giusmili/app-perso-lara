@@ -12,14 +12,16 @@
 </header>
 <main>
 <section>
+    <a href="{{ url('/membres') }}" class="btn-default btn-success btn-align">Modifier la liste des membres</a>
+    </form>
     <div class="picture">
         <img src="https://raw.githubusercontent.com/giusmili/lgc-complet-php/refs/heads/master/asset/cover.jpg"
         alt="cover">
     </div>
     <form action="{{ route('logout') }}" method="POST">
         @csrf
-        <button type="submit" class="btn-default btn-warning btn-align">Se déconnecter</button>
-    </form>
+        <button type="submit" class="btn-default btn-warning btn-align">Se déconnecter</button> 
+        
 </section>
 </main>
 </body>

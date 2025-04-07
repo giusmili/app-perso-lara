@@ -20,4 +20,36 @@ class MembreListePage extends Controller
         ]);
 
     }
+
+    
+    
+    # function update
+    public function edit($id)
+    {
+        $membre = Membre::findOrFail($id);
+        return view('membres.edit', compact('membre'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'nom' => 'required|string|max:255',
+            'prenom' => 'required|string|max:255',
+            'email' => 'required|email',
+            'ville' => 'nullable|string|max:255',
+            'pays' => 'nullable|string|max:255',
+            'date' => 'nullable|date',
+        ]);
+
+        $membre = Membre::findOrFail($id);
+        $membre->update($request->only(['nom', 'prenom', 'email', 'ville', 'pays', 'date']));
+
+        return redirect()->route('membres.index')->with('success', 'Membre mis à jour avec succès.');
+    }
+
+        public function index(){
+        $membres = Membre::all();
+        return view('membres.index', compact('membres'));
+    }
+   
 }

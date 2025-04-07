@@ -43,6 +43,14 @@ Route::post('/contact', [LangControllerPage::class, 'store'])->name('contact.sto
 
 Route::get('/liste', [MembreListePage::class, 'membre']);
 
+# Route pour afficher le formulaire d'édition d'un membre
+Route::get('/membres/{membre}/edit', [MembreListePage::class, 'edit'])->name('membres.edit');
+
+# Route UPDATE soumission du formulaire
+Route::put('/membres/{membre}', [MembreListePage::class, 'update'])->name('membres.update');
+Route::get('/membres', [MembreListePage::class, 'index'])->name('membres.index');
+
+
 /* routes pour la connexion admin */
 
 Route::get('/login', [AdminController::class, 'showLogin'])->name('login');
