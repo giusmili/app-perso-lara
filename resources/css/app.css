@@ -87,6 +87,7 @@ section {
         vertical-align: middle;
         object-fit: cover;
     }
+    
 
     table {
         width: 80rem;
@@ -133,7 +134,13 @@ main {
 section {
     width: 80rem;
 }
-
+.tables-user{
+    position: fixed;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
 fieldset {
     border-radius: 1rem;
     border: solid .1rem #a4a2a2;
