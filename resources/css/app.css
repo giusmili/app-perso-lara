@@ -152,7 +152,7 @@ fieldset legend {
     padding: .5rem;
 }
 
-section form input {
+section form input, section form input[type="text"]{
     display: block;
     border: .1rem solid transparent;
     width: 100%;
@@ -181,4 +181,7 @@ section form input[type="submit"] {
 
 section form [placeholder] {
     font-style: italic;
+}
+footer{
+    margin-top: 2rem;
 }
