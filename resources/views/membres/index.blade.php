@@ -44,7 +44,8 @@
                              <form action="{{ route('membres.destroy', $membre->id) }}" method="POST" style="display:inline-block;">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" onclick="return confirm('Confirmez-vous la suppression de ce membre ?');"
+                                <button 
+                                type="submit" onclick="return confirm('Confirmez-vous la suppression de ce membre ?');"
                                 class="btn-default btn-warning">Supprimer</button>
                             </form>
                         </td>
