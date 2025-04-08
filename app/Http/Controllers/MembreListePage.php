@@ -21,8 +21,6 @@ class MembreListePage extends Controller
 
     }
 
-    
-    
     # function update
     public function edit($id)
     {
@@ -50,6 +48,17 @@ class MembreListePage extends Controller
         public function index(){
         $membres = Membre::all();
         return view('membres.index', compact('membres'));
+    }
+
+    # méthode supprimer
+
+    
+    public function destroy(Membre $membre)
+    {
+        $membre->delete();
+
+        return redirect()->route('membres.index')
+                         ->with('success', 'Membre supprimé avec succès.');
     }
    
 }

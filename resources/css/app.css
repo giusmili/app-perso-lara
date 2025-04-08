@@ -20,7 +20,7 @@ footer {
 }
 
 section {
-    max-width: 80rem;
+    width: 80rem;
     margin: 6rem auto 0;
 
     h2 {
@@ -89,14 +89,15 @@ section {
     }
     
 
-    table {
-        width: 80rem;
+     table {
+       
+        width: 100%;
         border-collapse: collapse;
         margin: 1rem 0 2rem;
 
 
     }
-
+ 
     th,
     td {
         border: .1rem solid #333;
@@ -120,6 +121,7 @@ section {
         margin: 0 auto 2rem;
         clip-path: circle(40%);
     }
+    
 
 
 }
@@ -130,17 +132,22 @@ main {
     align-items: center;
     flex-direction: column;
 }
-
-section {
-    width: 80rem;
+.table-modify{
+    width: 75%!important;
+    table th:last-child, table td:last-child{
+        text-align: center;
+    }
 }
+
+/* section {
+    width: 90rem;
+} */
 .tables-user{
-    position: fixed;
-    top : 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width:100%!important;
+    position: relative;
     margin: 0 auto;
 }
+
 fieldset {
     border-radius: 1rem;
     border: solid .1rem #a4a2a2;

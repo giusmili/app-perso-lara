@@ -13,7 +13,7 @@
     </header>
 
 <main>
-    <section class="tables-user">
+    <section class="table-modify">
      
         <table>
             <thead>
@@ -38,9 +38,17 @@
                         <td>{{ $membre->date }}</td>
                         <td>
                         
-                            <a href="{{ route('membres.edit', $membre->id) }}">Modifier</a>
+                            <a href="{{ route('membres.edit', $membre->id) }}" class="btn-default btn-primary">Modifier</a>
                             {{-- On ajoutera la suppression ici plus tard --}}
+                             <!-- Formulaire de suppression -->
+                             <form action="{{ route('membres.destroy', $membre->id) }}" method="POST" style="display:inline-block;">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" onclick="return confirm('Confirmez-vous la suppression de ce membre ?');"
+                                class="btn-default btn-warning">Supprimer</button>
+                            </form>
                         </td>
+                   
                     </tr>
                 @endforeach
             </tbody>

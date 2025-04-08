@@ -18,7 +18,7 @@
              <a href="liste" class="btn-default btn-secondary">Search in list</a>
         </section>
 
-          <section>
+    <section>
             <h2>Langages de programmation</h2>
     <table>
  {{--    <caption>

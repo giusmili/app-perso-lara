@@ -50,6 +50,10 @@ Route::get('/membres/{membre}/edit', [MembreListePage::class, 'edit'])->name('me
 Route::put('/membres/{membre}', [MembreListePage::class, 'update'])->name('membres.update');
 Route::get('/membres', [MembreListePage::class, 'index'])->name('membres.index');
 
+# Route Suppression des donénes
+// Route pour supprimer un membre
+Route::delete('/membres/{membre}', [MembreListePage::class, 'destroy'])->name('membres.destroy');
+
 
 /* routes pour la connexion admin */
 
