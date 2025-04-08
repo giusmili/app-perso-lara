@@ -11,13 +11,10 @@
     <header>
         <h1>Liste des membres</h1>
     </header>
-    <p>
-        @if (session('success'))
-        <div style="color: green;">{{ session('success') }}</div>
-    @endif
-    </p>
+
 <main>
     <section class="tables-user">
+     
         <table>
             <thead>
                 <tr>
@@ -49,6 +46,11 @@
             </tbody>
         </table>
         <a href="{{ url("/dashboard")}}" class="btn-default btn-success">Dashboard</a>
+        <div role="region" aria-labelledby="success">
+            @if (session('success'))
+            <span style="color: green;" id="success">{{ session('success') }}</span>
+        @endif
+        </div>
     </section>
 </main>
     <footer>
