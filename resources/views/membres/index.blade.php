@@ -57,7 +57,7 @@
         <a href="{{ url("/dashboard")}}" class="btn-default btn-success">Dashboard</a>
         <div role="region" aria-labelledby="success">
             @if (session('success'))
-            <span style="color: green;" id="success">{{ session('success') }}</span>
+            <span style="color: green" id="success">{{ session('success') }}</span>
         @endif
         </div>
     </section>
