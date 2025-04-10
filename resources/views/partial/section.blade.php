@@ -6,4 +6,5 @@
              <a href="{{ url("/presentation")}}" class="btn-default btn-success">Présentation</a>
              <a href="{{ url("/contact")}}" class="btn-default btn-success">Contact</a>
              <a href="{{ route('login') }}" class="btn-default btn-success">Se connecter</a>
+             <a href="https://hackmd.io/@jSwLFU4yTaKCmDojtmIh2Q/BkkDsTQ0Jx" class="btn-default btn-success" target="blank">Documentation</a>
 </section>
