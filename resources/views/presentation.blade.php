@@ -10,7 +10,7 @@
     <main>
    
     
-        <section>
+        <section> 
             <h2><span class="align-v" aria-hidden="true">💻</span>Projet</h2>
             <p>In four days, at the latest, the 'Great Eastern' must reach New York harbour;
              therefore we might hope that accident would not dally with our watchfulness</p>
