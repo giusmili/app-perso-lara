@@ -14,7 +14,7 @@ class LangControllerPage extends Controller
      
         $validatedData = $request->validate([
             'email' => 'required|email|unique:admin,email', # Vérifie l'unicité dans la table admin
-            'password' => 'required|min:6',
+            'password' => 'required|min:6', # nombre de caractère autorisés
         ]);
 
         // Créer un nouvel administrateur
